@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html = "en">
+<head>
+    <meta charset = "utf-8">
+    <title>Chapter 5 Assignment</title>
+    <meta charset="UTF-8">
+    <script>
+        function calc_exchange(dollar, country){
+            
+            exchange_rate = dollar * country;
+            return exchange_rate;
+			
+		}
+	    
+        var dollar_amount=prompt("Amount of US dollars to convert:", "");   
+
+    </script>
+    <style>
+        body{background-color: orange}
+    </style>
+</head>    
+<body>
+    <script type="text/javascript">     
+            var eur = 0.902390
+            var gbp = 0.759097
+            var cad = 1.324361
+            var yen = 108.503161
+            var fra = 0.964061
+            
+        document.write("<h1>$" +dollar_amount+ " in U.S. Currency is approximately equivalent to:</h1>");
+        document.write(calc_exchange(dollar_amount, eur).toFixed(2)+ " EUR (Euros)", "<br>");
+        document.write(calc_exchange(dollar_amount, gbp).toFixed(2)+ " GBP (British Pounds)", "<br>");
+	    document.write(calc_exchange(dollar_amount, cad).toFixed(2)+ " CAD (Canadian Dollar)", "<br>");	
+	    document.write(calc_exchange(dollar_amount, yen).toFixed(2)+ " YEN (Japanese Yen)", "<br>");	
+	    document.write(calc_exchange(dollar_amount, fra).toFixed(2)+ " FRA (Swiss Franc)", "<br");
+    </script>
+    
+</body>
+</html>
